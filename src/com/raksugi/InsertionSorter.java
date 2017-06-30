@@ -33,18 +33,22 @@ public class InsertionSorter implements Sorter{
 
     /**
      * Do an insertion sort.
-     * @param input
+     * @param inputArray
      * @return
      */
     @Override
-    public int[] sort(int[] input) {
+    public int[] sort(int[] inputArray) {
+        if (inputArray.length <= 1) {
+            return inputArray;
+        }
+
         int i = 0;
 
-        while(i < input.length) {
-            insert(input, i);
+        while (i < inputArray.length) {
+            insert(inputArray, i);
             i++;
         }
 
-        return input;
+        return inputArray;
     }
 }

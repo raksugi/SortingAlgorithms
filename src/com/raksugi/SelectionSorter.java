@@ -1,6 +1,8 @@
 package com.raksugi;
 
 /**
+ * Selection sort using Java.
+ *
  * Created by rakesh on 6/28/17.
  */
 public class SelectionSorter implements Sorter {
