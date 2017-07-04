@@ -16,10 +16,11 @@ public class SelectionSorter implements Sorter {
      * @return
      */
     private int findMaxIndex(int[] inputArray, int size) {
-        /*  assume first index is maxIndex and
-            first value is maxValue.
-         */
+        /* assume first index is maxIndex. */
+        /* assume first value is maxValue. */
         int maxIndex = 0, maxValue = inputArray[0];
+
+        /* start at the second value */
         int i = 1;
 
         while(i < size) {
@@ -40,6 +41,8 @@ public class SelectionSorter implements Sorter {
         int i = inputArray.length;
         while(i > 0) {
             int maxIndex = findMaxIndex(inputArray, i);
+
+            /* swap */
             int temp = inputArray[maxIndex];
             inputArray[maxIndex] = inputArray[i - 1];
             inputArray[i - 1] = temp;
