@@ -6,3 +6,5 @@ out
 *.userlibraries
 .project
 .classpath
+/target/
+.settings
